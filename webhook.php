@@ -8,6 +8,8 @@ foreach($_POST as $k=>$v) {
     $url .= $k.'='.$v.'&';
 }
 
+print($url);
+
 $data = file_get_contents($url);
 
 print($data);
