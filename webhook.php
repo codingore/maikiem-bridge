@@ -10,6 +10,10 @@ foreach($_POST as $k=>$v) {
 }
 $url .= 'botmethod=' . $method;
 
+if ($method == 'post') {
+    $url .= '&botdata=' . file_get_contents('php://input');
+}
+
 $data = file_get_contents($url);
 
 print($data);
