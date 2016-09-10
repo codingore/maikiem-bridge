@@ -1,5 +1,5 @@
 <?php
 
-header('Location: http://maikiem.sayobot.com');
+header('Location: http://maikiem.com');
 
 ?>
